@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		
+		<meta charset="utf-8">
+		<title>MGReel</title>
+		
+		<style type="text/css">
+		
+			#file-area.dragging {
+				background-color: yellow;
+			}
+		
+		</style>
+		
+	</head>
+	<body>
+		
+		<h1>MGReel</h1>
+		
+		<div id="file-area">
+			<p>
+				A web app to convert one or more Wave files to a
+				single Make Noise Morphagene reel (32bit/48khz/stereo).
+			</p>
+			<p>
+				All files are concatenated and splice markers are set at the end of each
+				input files. Mono Wave files are converted to stereo.
+			</p>
+			<p>
+				<input type="file" id="file-input" multiple accept="audio/wave, audio/wav, audio/x-wav, audio/x-pn-wav"/>
+				<b>Drop WAV files here, or <label for="file-input">click here to pick them</label>.</b>
+			</p>
+			<p id="progress"></p>
+			<p id="error"></p>
+		</div>
+		
+		<script src="build.js" charset="utf-8"></script>
+		
+	</body>
+</html>

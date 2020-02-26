@@ -1,39 +1,28 @@
 mgreel.js
 =========
 
-mgreel.js is a JavaScript/Node script to convert one or more Wave files to a
-single Make Noise Morphagene reel (Wave file 32bit/48khz/stereo).
+> This fork is a web port of the [original Node script](https://github.com/olt/mgreel).
+
+A web app to convert one or more Wave files to a
+single Make Noise Morphagene reel (32bit/48khz/stereo).
 
 All files are concatenated and splice markers are set at the end of each
 input files. Mono Wave files are converted to stereo.
-
-Example:
-     mgreel --out out.wav mywav/*.wav
 
 
 Requirements
 ------------
 
-- You need to know how to use the command line of your system (MacOS, Win, Linux).
-- You need Node.js (https://nodejs.org).
-- Download this repository.
-- Change to this directory and call `npm link`.
-- Call `mgreel --out out.wav mywav/*.wav`
-
-
-Web version
------------
-
-Are you a web developer? The wavefile module works in web browsers and it
-should be possible to build a standalone version that can run inside any modern
-web browser, including drag & drop support. However, I'm not web develper and
-this is outside my comfort zone.
+- Install (Node.js)[https://nodejs.org].
+- Download this repository and change to this directory.
+- Build the JavaScript bundle by running `npm install && npm run build`.
+- Open `index.html` in your browser.
 
 
 License
 -------
 
-Copyright 2020 Oliver Tonnhofer
+Copyright 2020 Oliver Tonnhofer, Lorenzo Stanco
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

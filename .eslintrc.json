@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "commonjs": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [ "error", "always" ],
+        "no-console": "warn",
+        "no-unused-vars": [ "warn", { "varsIgnorePattern": "^(_|ignored)$" } ],
+        "no-empty": [ "error", { "allowEmptyCatch": true } ],
+        "radix": "error"
+    }
+}
