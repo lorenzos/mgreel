@@ -1,5 +1,5 @@
-mgreel.js
-=========
+mgreel.js web
+=============
 
 > This fork is a web port of the [original Node script](https://github.com/olt/mgreel).
 
@@ -13,10 +13,10 @@ input files. Mono Wave files are converted to stereo.
 Requirements
 ------------
 
-- Install (Node.js)[https://nodejs.org].
-- Download this repository and change to this directory.
-- Build the JavaScript bundle by running `npm install && npm run build`.
-- Open `index.html` in your browser.
+- Install [Node.js](https://nodejs.org)
+- Download this repository and change to this directory
+- Build the JavaScript bundle by running `npm install && npm run build`
+- Open `index.html` in your browser
 
 
 License
