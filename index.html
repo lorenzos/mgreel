@@ -6,9 +6,45 @@
 		<title>MGReel</title>
 		
 		<style type="text/css">
-		
+			
+			#page {
+				max-width: 400px;
+				margin: 0 auto;
+				padding: 20px;
+				font-family: sans-serif;
+				font-size: 14px;
+				line-height: 140%;
+			}
+			
 			#file-area.dragging {
-				background-color: yellow;
+				background-color: #66ffcc;
+				outline: 5px solid #66ffcc;
+			}
+			
+			#file-area input[type="file"] {
+				position: absolute !important;
+				height: 1px;
+				width: 1px;
+				overflow: hidden;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+			
+			#file-area label {
+				color: #009966;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			
+			#progress {
+				color: #009966;
+				font-weight: bold;
+				font-size: 12px;
+			}
+			
+			#error {
+				color: #cc0033;
+				font-weight: bold;
+				font-size: 12px;
 			}
 		
 		</style>
@@ -16,25 +52,29 @@
 	</head>
 	<body>
 		
-		<h1>MGReel</h1>
-		
-		<div id="file-area">
-			<p>
-				A web app to convert one or more Wave files to a
-				single Make Noise Morphagene reel (32bit/48khz/stereo).
-			</p>
-			<p>
-				All files are concatenated and splice markers are set at the end of each
-				input files. Mono Wave files are converted to stereo.
-			</p>
-			<p>
-				<input type="file" id="file-input" multiple accept="audio/wave, audio/wav, audio/x-wav, audio/x-pn-wav"/>
-				<b>Drop WAV files here, or <label for="file-input">click here to pick them</label>.</b>
-			</p>
+		<div id="page">
+			
+			<h1>MGReel</h1>
+			
+			<div id="file-area">
+				<p>
+					A web app to convert one or more Wave files to a
+					single Make Noise Morphagene reel (32bit/48khz/stereo).
+				</p>
+				<p>
+					All files are concatenated and splice markers are set at the end of each
+					input files. Mono Wave files are converted to stereo.
+				</p>
+				<p>
+					<input type="file" id="file-input" multiple accept="audio/wave, audio/wav, audio/x-wav, audio/x-pn-wav"/>
+					<b>Drop WAV files here, or <label for="file-input">click here to pick them</label>.</b>
+				</p>
+			</div>
+			
+			<p id="progress"></p>
+			<p id="error"></p>
+			
 		</div>
-		
-		<p id="progress"></p>
-		<p id="error"></p>
 		
 		<script src="build.js" charset="utf-8"></script>
 		
