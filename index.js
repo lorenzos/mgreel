@@ -60,8 +60,8 @@ const saveBufferToFile = (buffer) => {
 	// Adapted from: https://github.com/eligrey/FileSaver.js/blob/master/src/FileSaver.js
 	const name = 'mg.wav';
 	const a = document.createElement('a');
-    a.download = name;
-    a.rel = 'noopener';
+	a.download = name;
+	a.rel = 'noopener';
 	if ('download' in HTMLAnchorElement.prototype) {
 		URL.revokeObjectURL(a.href);
 		a.href = URL.createObjectURL(blob);
