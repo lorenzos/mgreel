@@ -9,6 +9,9 @@ single Make Noise Morphagene reel (32bit/48khz/stereo).
 All files are concatenated and splice markers are set at the end of each
 input files. Mono Wave files are converted to stereo.
 
+A ready-to-use online version is available here:  
+<https://www.lorenzostanco.com/lab/morphagene/#mgreel>
+
 
 Requirements
 ------------
